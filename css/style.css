@@ -92,11 +92,6 @@ button:hover {
     font-family: "Dancing Script", cursive;
 }
 
-#kaizen{
-    font-weight: bold;
-    color: #6366f1;
-}
-
 .foto img {
     width: 300px;
     border-radius: 20px;
@@ -119,6 +114,11 @@ button:hover {
     text-align: center;
     line-height: 1.5;
     font-size: 1.1rem;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #6366f1;
 }
 
 
