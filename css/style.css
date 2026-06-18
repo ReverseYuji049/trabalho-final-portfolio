@@ -121,5 +121,27 @@ button:hover {
     color: #6366f1;
 }
 
+#contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+#contato a{
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+#contato-links img {
+    display: block;
+}
+
+#contato a:hover{
+    transform:translateY(-6px) scale(1.05);
+    filter:drop-shadow(0 0 10px rgba(99,102,241,.45));
+}
+
 
 
