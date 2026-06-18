@@ -97,6 +97,13 @@ button:hover {
     color: #6366f1;
 }
 
+.foto img {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+}
 
 
 
