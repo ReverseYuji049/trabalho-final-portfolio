@@ -9,7 +9,7 @@ body {
     background: radial-gradient(circle at top, #15106a 0%, #0B0543 45%, #05031d 100%);
     color: white;
 }
-
+/* Barra de navegação */
 header {
     position: fixed;
     top: 0;
@@ -45,16 +45,16 @@ section {
     text-decoration: none;
     transition: 0.3s;
 }
-
+/* Efeito de hover ao passar com o mouse */
 .nav-links a:hover {
     color: #6366f1;
 }
-
+/* Marcação visual da página ativa */
 .nav-links a.ativo{
     color:#6366f1;
     font-weight:600;
 }
-
+/* Estilização dos botões */
 .buttons {
     display: flex;
     gap: 10px;
@@ -70,93 +70,6 @@ button {
 
 button:hover {
     transform: scale(1.05);
-}
-
-.introducao {
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 120px 10%;
-}
-
-.introducao-texto {
-    max-width: 600px;
-}
-
-.introducao h1 {
-    font-size: 5.1rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 10px #6366f1;
-}
-
-#frase{
-    font-size: 1.8rem;
-    margin-top: 10px;
-    color: #d1d5db;
-}
-
-#kaizen-frase{
-    font-style: italic;
-    font-family: "Dancing Script", cursive;
-}
-
-.foto img {
-    width: 300px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: flex-end;
-}
-.section {
-    padding: 100px 10%;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-#about-text {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.1rem;
-}
-
-.destaque {
-    font-weight: bold;
-    color: #6366f1;
-}
-
-#contato-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-}
-
-#contato a{
-    display: inline-block;
-    transition: transform .3s ease;
-}
-
-#contato-links img {
-    display: block;
-}
-
-#contato a:hover{
-    transform:translateY(-6px) scale(1.05);
-    filter:drop-shadow(0 0 10px rgba(99,102,241,.45));
-}
-
-footer {
-    background-color: rgba(15, 23, 42, 0.9);
-    padding: 30px;
-    text-align: center;
-    font-family: "Pliant", sans-serif;
 }
 
 .buttons{
@@ -182,6 +95,107 @@ footer {
     filter: drop-shadow(0 0 10px rgba(99,102,241,.6));
 }
 
+/* Estiliza a Introdução */
+.introducao {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 10%;
+}
+
+.introducao-texto {
+    max-width: 600px;
+}
+
+/* Estilização do nome */
+.introducao h1 {
+    font-size: 5.1rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px #6366f1;
+}
+
+/* Estiliza a frase Kaizen */
+#frase{
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #d1d5db;
+}
+
+#kaizen-frase{
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Estilização da foto da página inicial */
+.foto img {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Estiliza a seção Sobre */
+#about-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #6366f1;
+}
+
+/* Ícones dos links */
+#contato-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+#contato a{
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+#contato-links img {
+    display: block;
+}
+
+#contato a:hover{
+    transform:translateY(-6px) scale(1.05);
+    filter:drop-shadow(0 0 10px rgba(99,102,241,.45));
+}
+
+/* Estilização do rodapé */
+footer {
+    font-family: "Pliant", sans-serif;
+    background:rgba(15,23,42,.9);
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+}
+
+footer:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(99,102,241,.25);
+}
+
+/* Estilização das subpáginas */
 .subpaginas {
     padding: 140px 0 40px;
     text-align: center;
@@ -192,6 +206,7 @@ footer {
     text-shadow:0 0 18px rgba(99,102,241,.6);
 }
 
+/* Estilização da tabela de habilidades */
 #skills-tabela {
     width: 100%;
     border-collapse: collapse;
@@ -259,6 +274,7 @@ footer {
     transform:translateY(-3px);
 }
 
+/* Estilização da página de Projetos */
 .projects-card{
     display:flex;
     align-items:center;
@@ -302,6 +318,7 @@ footer {
     text-align: center;
 }
 
+/* Estilização especial para a subseção de Cursos */
 .courses-card {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -326,24 +343,13 @@ footer {
     flex-wrap: wrap;
 }
 
+/* Animação de digitação do nome */
 #typing{
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #6366f1;
     animation: typing 2.8s steps(20,end) forwards, cursor .7s infinite;
-}
-
-footer{
-    background:rgba(15,23,42,.9);
-    padding:30px;
-    text-align:center;
-    transition:.4s;
-}
-
-footer:hover{
-    transform:translateY(-3px);
-    box-shadow:0 0 25px rgba(99,102,241,.25);
 }
 
 @keyframes typing{
@@ -355,6 +361,7 @@ footer:hover{
     }
 }
 
+/* Animação do rodapé */
 footer{
     animation:footerFade .8s ease;
 }
@@ -371,12 +378,14 @@ footer{
     }
 }
 
+/* Animação do cursor piscando */
 @keyframes cursor{
     50%{
         border-color:transparent;
     }
 }
 
+/* Responsividade (Tablets) */
 @media (max-width:900px){
     nav{
         flex-direction:column;
@@ -415,6 +424,7 @@ footer{
     }
 }
 
+/* Responsividade (Celular) */
 @media (max-width:600px) {
     .nav-links {
         flex-direction: column;
@@ -437,6 +447,8 @@ footer{
         width: 180px;
     }
 }
+
+/* Modo Escuro */
 body.dark{
     background: #000;
     color: #fff;
