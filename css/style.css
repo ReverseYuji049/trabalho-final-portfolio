@@ -331,9 +331,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #6366f1;
-    animation:
-            typing 2.8s steps(20,end) forwards,
-            cursor .7s infinite;
+    animation: typing 2.8s steps(20,end) forwards, cursor .7s infinite;
 }
 
 footer{
@@ -358,7 +356,6 @@ footer:hover{
 }
 
 footer{
-
     animation:footerFade .8s ease;
 }
 
@@ -418,25 +415,55 @@ footer{
     }
 }
 
-@media (max-width:600px){
-    .nav-links{
-        flex-direction:column;
-        gap:15px;
+@media (max-width:600px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .introducao h1{
-        font-size:2.4rem;
+    .introducao h1 {
+        font-size: 2.4rem;
     }
 
-    #frase{
-        font-size:1.2rem;
+    #frase {
+        font-size: 1.2rem;
     }
 
-    .section-title{
-        font-size:2rem;
+    .section-title {
+        font-size: 2rem;
     }
 
-    .foto img{
-        width:180px;
+    .foto img {
+        width: 180px;
     }
+}
+body.dark{
+    background: #000;
+    color: #fff;
+}
+
+body.dark header{
+    background: #000;
+}
+
+body.dark nav{
+    background: #000;
+}
+
+body.dark .projects-card,
+body.dark #skills-card{
+    background: #111;
+    border: 1px solid #333;
+}
+
+body.dark .project-content p{
+    color: #ddd;
+}
+
+body.dark .nav-links a:hover{
+    color: #fff;
+}
+
+body.dark .nav-links{
+    color: #fff;
 }
