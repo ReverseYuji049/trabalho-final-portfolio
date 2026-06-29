@@ -9,7 +9,7 @@ if (tema === "dark") {
     // Retorna o nome da classe CSS "dark"
     document.body.classList.add("dark");
     // Muda o texto do botão
-    botaoTema.textContent = "Modo Claro";
+    botaoTema.textContent = "☀️";
 }
 // Adiciona evento ao clicar no botão
 botaoTema.addEventListener("click", () => {
@@ -19,12 +19,12 @@ botaoTema.addEventListener("click", () => {
     // Define o tema como escuro
     if(document.body.classList.contains("dark")){
         localStorage.setItem("tema", "dark");
-        botaoTema.textContent = "Modo Claro";
+        botaoTema.textContent = "☀️";
     }
     // Define o tema como claro
     else {
         localStorage.setItem("tema", "light");
-        botaoTema.textContent = "Modo Escuro";
+        botaoTema.textContent = "🌙";
     }
 })
 
